@@ -1,0 +1,113 @@
+body {
+  font-family: sans-serif;
+  color: #343434;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+}
+
+img {
+  max-width: 100%
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  text-align: right;
+}
+
+header::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+header .container {
+  border-bottom: 3px #CCC solid;
+}
+
+header .logo {
+  float: left;
+  width: 100px;
+  display: none;
+}
+
+header .title {
+  font-size: 45px;
+  letter-spacing: 3px;
+  color: #949081;
+}
+
+header .subtitle {
+  font-size: 20px;
+  color: #CCC;
+}
+
+section.hero {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+section.hero img {
+  max-height: 50vh;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+section.portfolio {
+  background-color: #DDD;
+  padding: 10px 10px;
+}
+
+section.portfolio .title {
+  color: #777;
+  font-size: 35px;
+  letter-spacing: 5px;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projects > article {
+  margin: 15px 2px;
+  text-align: center;
+  width: 311px;
+}
+
+.projects img {
+  border: 2px solid #949081;
+  border-radius: 5px;
+}
+
+.projects a {
+  color: #777;
+}
+
+.projects .project-name {
+  color: #949081;
+}
+
+footer {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+footer a {
+  margin: 10px;
+  color: #949081;
+}
+
+@media (min-width: 680px) {
+  header .logo {
+    display: block;
+  }
+}
