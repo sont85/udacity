@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <title>Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <div class="container">
+    <div class="container clearfix">
       <img class="logo" src="images/favicon.ico"></img>
       <h1 class="title">Son Truong</h1>
       <span class="subtitle">Web Developer</span>
@@ -16,9 +17,11 @@
   </header>
   <section class="hero">
     <div class="container">
-      <span id="backward" class="fa fa-chevron-left fa-2x"></span>
       <img id="heroImg" src="images/WebDev1.jpg">
-      <span id="forward" class="fa fa-chevron-right fa-2x"></span>
+      <div class="clearfix">
+        <span id="backward" class="fa fa-chevron-left fa-2x"></span>
+        <span id="forward" class="fa fa-chevron-right fa-2x"></span>
+      </div>
     </div>
   </section>
   <section class="portfolio">
@@ -29,16 +32,24 @@
           <a href="#"><img src="images/earth-large.jpg" srcset="images/earth.jpg 1x, images/earth-large.jpg 2x"></a>
           <h1 class="project-name">PROJECT 1</h1>
           <a href="#">https://github.com/udacity/project1</a>
+          <span class="fa fa-caret-down dropdown"></span>
+          <div class="lang"></div>
         </article>
         <article>
           <a href="#"><img src="images/fish-large.jpg" srcset="images/fish.jpg 1x, images/fish-large.jpg 2x"></a>
           <h1 class="project-name">PROJECT 2</h1>
           <a href="#">https://github.com/udacity/project2</a>
+          <span class="fa fa-caret-down dropdown"></span>
+          <div class="lang"></div>
+
         </article>
         <article>
           <a href="#"><img src="images/fish-large.jpg" srcset="images/pier.png 1x, images/pier-large.png 2x"></a>
           <h1 class="project-name">PROJECT 3</h1>
           <a href="#">https://github.com/udacity/project3</a>
+          <span class="fa fa-caret-down dropdown"></span>
+          <div class="lang"></div>
+
         </article>
       </section>
     </div>

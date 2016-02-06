@@ -16,16 +16,16 @@ a {
   text-decoration: none;
 }
 
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 header {
   margin-bottom: 10px;
   padding-bottom: 10px;
   text-align: right;
-}
-
-header::after {
-  content: "";
-  display: block;
-  clear: both;
 }
 
 header .container {
@@ -56,8 +56,21 @@ section.hero {
 
 section.hero img {
   max-height: 50vh;
-  margin-left: 20px;
-  margin-right: 20px;
+}
+
+section.hero .clearfix {
+  max-width: 600px;
+  margin: auto;
+}
+
+section.hero #forward {
+  float: right;
+  color: #777;
+}
+
+section.hero #backward {
+  float: left;
+  color: #777;
 }
 
 section.portfolio {
@@ -76,7 +89,7 @@ section.portfolio .title {
   flex-wrap: wrap;
 }
 
-.projects > article {
+.projects article {
   margin: 15px 2px;
   text-align: center;
   width: 311px;
@@ -89,6 +102,11 @@ section.portfolio .title {
 
 .projects a {
   color: #777;
+}
+
+.projects .dropdown {
+  cursor: pointer;
+  display: block;
 }
 
 .projects .project-name {
